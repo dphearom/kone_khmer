@@ -34,7 +34,7 @@ export default function Home() {
 
           <div className="md:w-1/2">
             <img
-              src="https://source.unsplash.com/random/480x360"
+              src="https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F72c80f114dc149019051b6852a9e3b7a"
               alt=""
               className="object-cover w-full h-full rounded-md dark:bg-gray-500"
             />
