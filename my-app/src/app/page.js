@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div>
       <Navbar />
-      <section className="dark:bg-gray-900 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 container">
+      <section className=" max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 container">
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="md:w-1/2 p-6">
             <div className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl text-[#FF204E]">
