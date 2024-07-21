@@ -11,7 +11,7 @@ export default function Home() {
             <div className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl text-[#FF204E]">
               Bigger Quote
             </div>
-            <div className="max-w-2xl mb-6 font-light text-white lg:mb-8 md:text-lg lg:text-xl">
+            <div className="max-w-2xl mb-6 font-light text-black lg:mb-8 md:text-lg lg:text-xl">
               Contrary to popular belief, Lorem Ipsum is not simply random text.
               It has roots in a piece of classical Latin literature from 45 BC,
               making it over 2000 years old.
@@ -19,13 +19,13 @@ export default function Home() {
             <div className="flex flex-row space-x-4">
               <a
                 href="#"
-                className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-white rounded-lg bg-[#A0153E] hover:bg-[#FF204E] focus:ring-4 focus:ring-gray-300"
+                className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-white rounded-lg bg-[#A0153E] hover:bg-[#FF204E] focus:ring-4 focus:ring-black"
               >
                 Meet the Team
               </a>
               <a
                 href="#"
-                className="inline-flex items-center border-2 justify-center px-5 py-3 text-base font-medium text-white rounded-lg hover:bg-[#FF204E] focus:ring-4 focus:ring-gray-300"
+                className="inline-flex items-center border-2 justify-center px-5 py-3 text-base font-medium border-black text-black rounded-lg hover:bg-[#FF204E] hover:text-white focus:ring-2 focus:ring-black"
               >
                 Learn More
               </a>

@@ -2,6 +2,7 @@ import Navbar from "../navbar";
 import Footer from "../footer";
 
 export default function About() {
+  const teamMembers = [1, 2, 3, 4, 5];
   return (
     <div>
       <Navbar />
@@ -34,9 +35,42 @@ export default function About() {
         </div>
       </div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-4">
-        <h1 className="text-2xl">Meet our Team</h1>
+        <h1 className="text-2xl text-black font-bold ">Meet our Team</h1>
+        <div>
+          <div>
+            <section className="text-center p-8">
+              <div className="flex justify-center space-x-4">
+                {teamMembers.map((member, index) => (
+                  <div key={index} className="flex flex-col items-center">
+                    <div className="bg-gray-300 rounded-full w-20 h-20 mb-2"></div>
+                    <p className="font-bold">Lorem Ipsum</p>
+                    <p className="text-sm text-gray-500">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua.
+                    </p>
+                    <div className="flex space-x-2 mt-2">
+                      <div className="bg-gray-300 w-6 h-6"></div>
+                      <div className="bg-gray-300 w-6 h-6"></div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </section>
+          </div>
+        </div>
       </div>
-      <Footer />
+      <section className="bg-red-600 text-white p-8 text-center w-full">
+        <p className="max-w-screen-lg mx-auto">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        </p>
+      </section>
+      <div className="">
+        <Footer />
+      </div>
     </div>
   );
 }

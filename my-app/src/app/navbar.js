@@ -13,7 +13,7 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="bg-[#00224D] border-b-4 border-b-[#FF204E]">
+    <nav className="bg-white border-b-4 border-b-[#FF204E]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
@@ -24,7 +24,7 @@ export default function Navbar() {
               className="max-w-20"
             />
             <div className="flex-shrink-0">
-              <span className="pl-2 text-white font-semibold">KoneKhmer</span>
+              <span className="pl-2 font-semibold">KoneKhmer</span>
             </div>
           </div>
           <div className="hidden md:block">
@@ -32,7 +32,7 @@ export default function Navbar() {
               {navItems.map((item) => (
                 <a
                   href={item.ref}
-                  class="text-gray-300 hover:bg-[#FF204E] hover:text-white px-3 py-2 rounded-md text-sm font-medium hidden md:inline"
+                  class="text-black hover:bg-[#FF204E] hover:text-white px-3 py-2 rounded-md text-sm font-medium hidden md:inline"
                   key={item.id}
                 >
                   {item.text}
