@@ -21,7 +21,7 @@ function NavLink({ href, children }) {
 
 function MyComponent() {
   return (
-    <footer className="border-t-4 border-t-[#FF204E]">
+    <footer className="border-t-4 border-t-[#FF204E] pb-8">
       <div className="flex flex-col md:flex-row max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 gap-4 pt-4 justify-evenly">
         <div className="flex flex-row w-full md:w-1/3 items-center ">
           <div>
