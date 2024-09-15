@@ -1,7 +1,9 @@
 import Navbar from "./navbar";
 import Footer from "./footer";
+import Link from "next/link";
 
 export default function Home() {
+
   const QuoteCard = () => {
     return (
       <div className="bg-gray-200 rounded-lg p-4 flex flex-col md:flex-row items-center">
@@ -35,7 +37,7 @@ export default function Home() {
     );
   };
   return (
-    <div>
+    <div className="app">
       <Navbar />
       <section className=" max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 container">
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
@@ -49,18 +51,18 @@ export default function Home() {
               making it over 2000 years old.
             </div>
             <div className="flex flex-row space-x-4">
-              <a
-                href="#"
+              <Link
+                href="/about"
                 className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-white rounded-lg bg-[#A0153E] hover:bg-[#FF204E] focus:ring-4 focus:ring-black"
               >
                 Meet the Team
-              </a>
-              <a
-                href="#"
+              </Link>
+              <Link
+                href="/about"
                 className="inline-flex items-center border-2 justify-center px-5 py-3 text-base font-medium border-black text-black rounded-lg hover:bg-[#FF204E] hover:text-white focus:ring-2 focus:ring-black"
               >
                 Learn More
-              </a>
+              </Link>
             </div>
           </div>
 
