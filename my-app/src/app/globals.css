@@ -29,3 +29,9 @@ html{
   background-color: white;
   color: black;
 }
+
+.mission {
+  background-image: url("../../public/photos/mission.jpg");
+  background-repeat: no-repeat;
+  background-size:     cover;  
+}
