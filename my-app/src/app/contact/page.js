@@ -4,21 +4,21 @@ export default function Contact() {
   return (
     <div>
       <Navbar />
-      <section className="p-6 dark:bg-gray-100 dark:text-gray-800">
+      <div>
+           <section className="p-6 dark:bg-gray-100 dark:text-gray-800">
         <div className="container grid gap-6 mx-auto text-center lg:grid-cols-2 xl:grid-cols-5">
           <div className="w-full px-6 py-16 rounded-md sm:px-12 md:px-16 xl:col-span-2 dark:bg-gray-50">
-            <span className="block mb-2 dark:text-violet-600">
+            {/* <span className="block mb-2 dark:text-violet-600">
               Mamba design system
-            </span>
+            </span> */}
             <h1 className="text-5xl font-extrabold dark:text-gray-900">
-              Build it with Mamba
+              Get In Touch, Get Things Started Now!
             </h1>
             <p className="my-8">
-              <span className="font-medium dark:text-gray-900">
+              {/* <span className="font-medium dark:text-gray-900">
                 Modular and versatile.
-              </span>
-              Fugit vero facilis dolor sit neque cupiditate minus esse accusamus
-              cumque at.
+              </span> */}
+              After you have filled out the form and submitted, a representative from our team will get back to you within the next 24 hours.
             </p>
             <form noValidate="" action="" className="self-stretch space-y-3">
               <div>
@@ -47,7 +47,7 @@ export default function Contact() {
                 type="button"
                 className="w-full py-2 font-semibold rounded bg-violet-400 hover:bg-violet-600 text-gray-50"
               >
-                Join the waitlist
+                Sign Up for Mentorship
               </button>
             </form>
           </div>
@@ -58,6 +58,8 @@ export default function Contact() {
           />
         </div>
       </section>
+      </div>
+     
     </div>
   );
 }

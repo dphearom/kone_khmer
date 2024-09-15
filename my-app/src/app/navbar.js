@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import React, { useState } from "react";
-import LOGO from "./photos/logo.jpg"
 
 export const LOGO_LINK = "https://static-00.iconduck.com/assets.00/cambodia-icon-2048x1536-v2v1po80.png"
 export default function Navbar() {
@@ -16,7 +15,7 @@ export default function Navbar() {
 
 //https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F72c80f114dc149019051b6852a9e3b7a
   return (
-    <nav className="bg-white border-b-4 border-b-[#FF204E]">
+    <nav className="bg-white border-b border-b-[#FF204E] p-5">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <Link className="flex items-center cursor-pointer" href={navItems.at(0).ref}>

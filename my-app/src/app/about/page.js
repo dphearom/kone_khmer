@@ -70,18 +70,11 @@ export default function About() {
           <div className="bg-gray-300 p-6 rounded shadow-md max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <h1 className="text-black text-3xl font-bold mb-2">Our Mission</h1>
             <p className="text-black">
-              Contrary to popular belief, Lorem Ipsum is not simply random text.
-              It has roots in a piece of classical Latin literature from 45 BC,
-              making it over 2000 years old. Richard McClintock, a Latin
-              professor at Hampden-Sydney College in Virginia, looked up one of
-              the more obscure Latin words, consectetur, from a Lorem Ipsum
-              passage, and going through the cites of the word in classical
-              literature, discovered the undoubtable source. Lorem Ipsum comes
-              from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et
-              Malorum" (The Extremes of Good and Evil) by Cicero, written in 45
-              BC. This book is a treatise on the theory of ethics, very popular
-              during the Renaissance. The first line of Lorem Ipsum, "Lorem
-              ipsum dolor sit amet..", comes from a line in section 1.10.32.
+            Kone Khmer Scholarships Project (<strong>KKSP</strong>) is a non-profit mentorship program founded by Somphors Tann, a Harvard University Master’s student, 
+          with a vision to empower the next generation of Cambodian high school students to achieve their dreams of studying at top universities across the globe. 
+          According to many studies out there, Cambodians are considered as one of the most underrepresented ethnicities in higher education in the United States.
+          We believe in the boundless potential of Cambodia's youth, and our mission is to guide and support you on this transformative journey. 
+          With the unwavering dedication of our passionate mentors, we’re here to help turn your aspirations into reality.
             </p>
           </div>
         </div>
@@ -110,15 +103,11 @@ export default function About() {
       </div>
       <section className="bg-red-600 text-white p-8 text-center w-full">
         <p className="max-w-screen-lg mx-auto">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
+         Our mentorship program was created to be free for all <strong>Cambodians</strong> and will always be free!
         </p>
       </section>
-      <div className="">
-        <Footer />
-      </div>
+      <Footer />
+
     </div>
   );
 }
