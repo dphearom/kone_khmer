@@ -1,5 +1,6 @@
 import Navbar from "../navbar";
 import Footer from "../footer";
+import Image from "next/image";
 
 export default function Blogs() {
   const resources = [1, 2, 3, 4, 5, 6];
@@ -48,9 +49,10 @@ export default function Blogs() {
             </p>
           </div>
           <div className="">
-            <div className="bg-gray-300 w-full h-64"></div>
+            {/* <div className="bg-gray-300 w-full h-64"></div> */}
             {/* Placeholder for the image */}
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <Image src={require("../../../public/photos/resources.jpg")} className="w-full h-50 m md:h-48 md:bg-contain"/>
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-5 pb-5">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {resources.map((resource, index) => (
                   <Card key={index} />
