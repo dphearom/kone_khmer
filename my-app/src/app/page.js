@@ -1,7 +1,7 @@
 import Navbar from "./navbar";
 import Footer from "./footer";
 import Link from "next/link";
-
+import Image from "next/image";
 export default function Home() {
 
   const QuoteCard = () => {
@@ -67,8 +67,9 @@ export default function Home() {
           </div>
 
           <div className="md:w-1/2">
-            <img
-              src="https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F72c80f114dc149019051b6852a9e3b7a"
+            <Image
+              // src="https://cdn.builder.io/api/v1/image/assets%2FYJIGb4i01jvw0SRdL5Bt%2F72c80f114dc149019051b6852a9e3b7a"
+              src={require("../../../my-app/public/photos/harvard.jpg")}
               alt=""
               className="object-cover w-full h-full rounded-md dark:bg-gray-500"
             />
