@@ -1,9 +1,22 @@
+"use client";
 import Navbar from "./navbar";
 import Footer from "./footer";
 import Link from "next/link";
 import Image from "next/image";
-export default function Home() {
+import { useState , useEffect } from "react";
+import TextTransition, { presets } from 'react-text-transition';
 
+const TEXTS = ["Dream Big!", "Go Big!"]
+export default function Home() {
+  const [index, setIndex] = useState(0)
+
+  useEffect(() => {
+    const intervalId = setInterval(
+      () => setIndex((index) => index + 1),
+      3000,
+    );
+    return () => clearTimeout(intervalId);
+  }, []);
   const QuoteCard = () => {
     return (
       <div className="bg-gray-200 rounded-lg p-4 flex flex-col md:flex-row items-center">
@@ -43,12 +56,11 @@ export default function Home() {
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="md:w-1/2 p-6">
             <div className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl text-[#FF204E]">
-              Bigger Quote
+              {/* Bigger Quote */}
+              <TextTransition springConfig={presets.wobbly}>{TEXTS[index % TEXTS.length]}</TextTransition>
             </div>
             <div className="max-w-2xl mb-6 font-light text-black lg:mb-8 md:text-lg lg:text-xl">
-              Contrary to popular belief, Lorem Ipsum is not simply random text.
-              It has roots in a piece of classical Latin literature from 45 BC,
-              making it over 2000 years old.
+              It does not matter how ambitious your dreams are, it has to start somewhere. Let's start the spark together!
             </div>
             <div className="flex flex-row space-x-4">
               <Link
@@ -78,7 +90,7 @@ export default function Home() {
       </section>
       <section className="bg-red-600 text-white text-center p-12">
         <h1 className="text-2xl md:text-3xl font-semibold mb-4">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit
+          Not sure about us?
         </h1>
         <button className="bg-red-700 hover:bg-red-800 text-white font-semibold py-2 px-4 rounded">
           Learn More
@@ -87,8 +99,8 @@ export default function Home() {
       <div className="w-full">
         <div className="p-8 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <QuoteCard />
-            <QuoteCard />
+            {/* <QuoteCard />
+            <QuoteCard /> */}
           </div>
         </div>
       </div>
